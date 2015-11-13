@@ -1,0 +1,17 @@
+{
+  "name": "jg-TableExport",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jongo593/tableExport.jquery.plugin",
+  "authors": [
+    "Jonathan Go <jon.go@knetik.com>"
+  ],
+  "description": "Exports html5 tables",
+  "main": [
+    "**/**/*.js"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": false
+}
