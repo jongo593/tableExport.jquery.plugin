@@ -75,7 +75,8 @@ THE SOFTWARE.*/
 						console.log(tdData);
 					}
 					var base64data = "base64," + $.base64.encode(tdData);
-					window.open('data:application/'+defaults.type+';filename=exportData;' + base64data);
+					$('<a style="display:none" href="data:application/vnd.ms-'+defaults.type+';filename=exportData.doc;'+base64data+'" download="'+defaults.tableName.toString()+'.csv"><span></span></a>').appendTo(document.body).find('span').trigger("click").parent().remove();
+					//window.open('data:application/'+defaults.type+';filename=exportData;' + base64data);
 				}else if(defaults.type == 'sql'){
 				
 					// Header
